@@ -16,8 +16,21 @@ int main() {
       stuAvg[stu] = stuTotal/3;
       puts("");
    }
+
    for (int i = 0; i < 3; i++) {
       printf("Student %d average is: %0.2f\n", i+1, stuAvg[i]);
    }
+   puts("");
+
+   for (int i = 0; i<3; i++) {
+      printf("Student %d: ", i+1);
+      if (stuAvg[i] > 60) {
+         printf("Selected");
+      } else {
+         printf("Not selected");
+      }
+      puts("");
+   }
+
    return 0;
 }
